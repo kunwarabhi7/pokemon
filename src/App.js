@@ -8,7 +8,7 @@ function App() {
   const [pokemon, setPokemon] = useState({})
 
   const searchPokemon = () => {
-    Axios.get(`process.env.POKEMON_API/${name}`).then(res => {
+    Axios.get(`https://pokeapi.co/api/v2/pokemon/${name}`).then(res => {
       console.log(res)
       setPokemon({
 
