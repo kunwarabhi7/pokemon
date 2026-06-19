@@ -1,12 +1,14 @@
 pipeline{
 	agent any
 
-	stages:{
-		stage("Build docker Image") {
+	stages{
+		stage ("Build docker Image") {
+			steps {
 			sh 'docker build -t pokemon-app .'
+			}
 		}
 	}
-	stage("Deploy Container") {
+		stage("Deploy Container") {
 		steps {
 			sh '''
 			docker rm -f pokemon-app || true
