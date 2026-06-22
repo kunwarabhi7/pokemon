@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="TitleSection">
-        <h1>Pokemon Jenkins</h1>
+        <h1>Pokemon Jenkins Automate</h1>
         <input type="text" onChange={e => { setName(e.target.value) }} />
         <button onClick={searchPokemon}>Search Pokemon</button>
         {!pokemonChoosen ? <p>Choose a pokemon </p> :
